@@ -1,7 +1,7 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "Hexel Studio Docs",
   "colors": {
     "primary": "#4e17b5",
     "light": "#4e17b5",
