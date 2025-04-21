@@ -3,8 +3,8 @@
   "theme": "mint",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
+    "primary": "#4e17b5",
+    "light": "#4e17b5",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
@@ -94,8 +94,8 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
+      "x": "https://x.com/hexel_studio",
+      "github": "https://github.com/hexelstudio",
       "linkedin": "https://linkedin.com/company/mintlify"
     }
   }
