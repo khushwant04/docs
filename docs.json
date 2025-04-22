@@ -4,7 +4,7 @@
   "name": "Hexel Studio Docs",
   "colors": {
     "primary": "#4e17b5",
-    "light": "#4e17b5",
+    "light": "#3372e3",
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
@@ -76,8 +76,8 @@
     }
   },
   "logo": {
-    "light": "/logo.png",
-    "dark": "/logo.png"
+    "light": "/logo/logo.svg",
+    "dark": "/logo/logo.svg"
   },
   "navbar": {
     "links": [
