@@ -1,43 +1,49 @@
-# Mintlify Starter Kit
+# docs
 
-Use the starter kit to get your docs deployed and ready to customize.
+A [Mintlify](https://mintlify.com) documentation site scaffold.
 
-Click the green **Use this template** button at the top of this repo to copy the Mintlify starter kit. The starter kit contains examples with
+**Status:** this repository currently contains the unmodified Mintlify starter kit (a snapshot committed in November 2025 from
+[mintlify/starter](https://github.com/mintlify/starter)). The pages, navigation, branding (`"name": "Mint Starter Kit"`,
+Mintlify logos, support links) and the sample OpenAPI spec are all starter placeholders; no project-specific
+documentation has been written yet.
 
-- Guide pages
-- Navigation
-- Customizations
-- API reference pages
-- Use of popular components
-
-**[Follow the full quickstart guide](https://starter.mintlify.com/quickstart)**
-
-## Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mint) to preview your documentation changes locally. To install, use the following command:
+## Structure
 
 ```
+.
+├── docs.json          # Site config: theme, colors, navigation, navbar, footer
+├── index.mdx          # Landing page
+├── quickstart.mdx
+├── development.mdx
+├── essentials/        # Starter pages showing Mintlify components
+├── ai-tools/          # Starter pages for Cursor, Claude Code, Windsurf
+├── api-reference/     # Sample API reference generated from openapi.json
+├── snippets/          # Reusable MDX snippets
+├── images/, logo/, favicon.svg
+└── DV LAB-5th sem(2022).pdf   # Unrelated file (college lab manual), not part of the site
+```
+
+## Local preview
+
+Requires Node.js.
+
+```bash
 npm i -g mint
+mint dev          # run from the repo root, where docs.json lives
 ```
 
-Run the following command at the root of your documentation, where your `docs.json` is located:
+Open http://localhost:3000.
 
-```
-mint dev
-```
+## Customizing
 
-View your local preview at `http://localhost:3000`.
+1. Update `name`, `colors`, `logo`, `navbar` and `footer` in `docs.json`.
+2. Replace the starter pages and the navigation entries that point to them.
+3. Replace `api-reference/openapi.json` with a real spec, or remove the API reference tab.
 
-## Publishing changes
+## Publishing
 
-Install our GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app) to propagate changes from your repo to your deployment. Changes are deployed to production automatically after pushing to the default branch.
+Install the Mintlify GitHub app from the Mintlify dashboard; pushes to the default branch then deploy automatically.
 
-## Need help?
+## License
 
-### Troubleshooting
-
-- If your dev environment isn't running: Run `mint update` to ensure you have the most recent version of the CLI.
-- If a page loads as a 404: Make sure you are running in a folder with a valid `docs.json`.
-
-### Resources
-- [Mintlify documentation](https://mintlify.com/docs)
+`LICENSE` is the MIT license inherited from the Mintlify starter (Copyright (c) 2023 Mintlify).
